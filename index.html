@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP address tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@200&family=PT+Sans+Caption&family=Roboto:wght@300;400&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+</head>
+<body>
+    <h1>IP Address Tracker</h1>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search for any IP address or domain">
+        <button class="search-btn"><img src="/ip-address-tracker-master/images/icon-arrow.svg" class="btn-icon"></button>
+    </div>
+
+    <div class="location-infos">
+        <div class="ip-address-div">
+            <div class="title">IP Address</div>
+            <div class="ip-address"></div>
+
+        </div>
+        <div class="location-div">
+            <div class="title">Location</div>
+            <div class="location"></div>
+        </div>
+        <div class="timezone-div">
+            <div class="title">Timezone</div>
+            <div class="timezone"></div>
+        </div>
+        <div class="isp-div">
+            <div class="title">ISP</div>
+            <div class="isp"></div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
